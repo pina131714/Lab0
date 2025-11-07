@@ -49,7 +49,7 @@ def fill_missing_values(values: List[Any], fill_value: Any = 0) -> List[Any]:
     output = []
     for v in values:
         is_missing = (
-            v is None or 
+            v is None or
             v == '' or
             (isinstance(v, float) and math.isnan(v))
         )
@@ -115,8 +115,8 @@ def shuffle_list(values: List[Any], seed: Optional[int] = None) -> List[Any]:
 # ----------------------------------------------------------------
 
 def normalize_min_max(
-    values: List[float], 
-    new_min: float = 0.0, 
+    values: List[float],
+    new_min: float = 0.0,
     new_max: float = 1.0
 ) -> List[float]:
     """
@@ -143,7 +143,7 @@ def normalize_min_max(
         
     new_range = new_max - new_min
     return [
-        new_min + ((v - min_val) * new_range / val_range) 
+        new_min + ((v - min_val) * new_range / val_range)
         for v in values
     ]
 
@@ -173,8 +173,8 @@ def standardize_z_score(values: List[float]) -> List[float]:
 
 
 def clip_values(
-    values: List[float], 
-    min_val: float, 
+    values: List[float],
+    min_val: float,
     max_val: float
 ) -> List[float]:
     """
