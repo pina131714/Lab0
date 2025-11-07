@@ -1,0 +1,90 @@
+# ----------------------------------------------------------------
+# Python & Virtual Environments
+# ----------------------------------------------------------------
+# Ignora tu entorno virtual. El tuyo se llama (py313ml)
+# pero estos son patrones comunes
+venv/
+.venv/
+env/
+.env
+*.env
+env.bak
+venv.bak
+
+# Archivos de caché y bytecode de Python
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+
+# Artefactos de instalación y distribución
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+*.whl
+
+# ----------------------------------------------------------------
+# MLOps, Modelos y Datos
+# ----------------------------------------------------------------
+# Ignora modelos entrenados, que suelen ser archivos binarios grandes
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.pth
+*.pt
+models/
+*.model
+
+# Descomenta las siguientes líneas si NO quieres incluir
+# tus datos en el repositorio (¡muy recomendado!)
+#
+# *.csv
+# *.json
+# *.parquet
+# data/
+# data/raw/
+# data/processed/
+
+# ----------------------------------------------------------------
+# Jupyter Notebooks
+# ----------------------------------------------------------------
+# Ignora los "checkpoints" que crea Jupyter automáticamente
+.ipynb_checkpoints/
+
+# ----------------------------------------------------------------
+# Logs y Bases de Datos
+# ----------------------------------------------------------------
+logs/
+*.log
+*.sqlite
+*.sqlite3
+
+# ----------------------------------------------------------------
+# Configuraciones de IDE y Editores
+# ----------------------------------------------------------------
+.idea/          # PyCharm
+.vscode/        # VSCode
+.project
+.pydevproject
+.settings/
+.sublime-project
+.sublime-workspace
+
+# ----------------------------------------------------------------
+# Archivos del Sistema Operativo
+# ----------------------------------------------------------------
+.DS_Store       # macOS
+Thumbs.db       # Windows
+desktop.ini     # Windows
