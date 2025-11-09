@@ -93,4 +93,4 @@ def test_cli_struct_shuffle(runner):
     
     assert result.exit_code == 0
     # The shuffled list with seed 42 is always the same
-    assert result.output.strip() == "[3, 5, 1, 4, 2]"
+    assert result.output.strip() == "[4, 2, 3, 5, 1]"

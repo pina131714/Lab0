@@ -1,7 +1,7 @@
 [project]
 name = "lab0"
 version = "0.1.0"
-description = "Add your description here"
+description = "MLOps Lab0: Data Preprocessing CLI & CI Fundamentals"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
