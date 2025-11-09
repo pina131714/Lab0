@@ -1,8 +1,8 @@
 # ----------------------------------------------------------------
 # Python & Virtual Environments
 # ----------------------------------------------------------------
-# Ignora tu entorno virtual. El tuyo se llama (py313ml)
-# pero estos son patrones comunes
+# Ignore your virtual environment. Yours might be (py313ml),
+# but these are common patterns.
 venv/
 .venv/
 env/
@@ -11,13 +11,19 @@ env/
 env.bak
 venv.bak
 
-# Archivos de caché y bytecode de Python
+# Python cache, bytecode, and version files
 __pycache__/
 *.py[cod]
 *$py.class
 .python-version
 
-# Artefactos de instalación y distribución
+# Testing & Coverage artifacts
+.coverage
+.pytest_cache/
+
+# ----------------------------------------------------------------
+# Installation & Distribution Artifacts
+# ----------------------------------------------------------------
 build/
 develop-eggs/
 dist/
@@ -35,9 +41,9 @@ var/
 *.whl
 
 # ----------------------------------------------------------------
-# MLOps, Modelos y Datos
+# MLOps, Models & Data
 # ----------------------------------------------------------------
-# Ignora modelos entrenados, que suelen ser archivos binarios grandes
+# Ignore trained models, which are often large binary files
 *.pkl
 *.pickle
 *.joblib
@@ -47,8 +53,8 @@ var/
 models/
 *.model
 
-# Descomenta las siguientes líneas si NO quieres incluir
-# tus datos en el repositorio (¡muy recomendado!)
+# Uncomment the following lines if you do NOT want
+# to include your data in the repository (highly recommended!)
 #
 # *.csv
 # *.json
@@ -60,11 +66,11 @@ models/
 # ----------------------------------------------------------------
 # Jupyter Notebooks
 # ----------------------------------------------------------------
-# Ignora los "checkpoints" que crea Jupyter automáticamente
+# Ignore auto-generated Jupyter checkpoints
 .ipynb_checkpoints/
 
 # ----------------------------------------------------------------
-# Logs y Bases de Datos
+# Logs & Databases
 # ----------------------------------------------------------------
 logs/
 *.log
@@ -72,7 +78,7 @@ logs/
 *.sqlite3
 
 # ----------------------------------------------------------------
-# Configuraciones de IDE y Editores
+# IDE & Editor Configs
 # ----------------------------------------------------------------
 .idea/          # PyCharm
 .vscode/        # VSCode
@@ -83,7 +89,7 @@ logs/
 .sublime-workspace
 
 # ----------------------------------------------------------------
-# Archivos del Sistema Operativo
+# Operating System Files
 # ----------------------------------------------------------------
 .DS_Store       # macOS
 Thumbs.db       # Windows
