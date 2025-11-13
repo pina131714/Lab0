@@ -28,7 +28,7 @@ Lab0/
 	│ └── test_logic.py 
 	└── uv.lock
 	
-## 📋 Core Dependencies
+## Core Dependencies
 
 * **`click`**: For building the command-line interface.
 * **`black`**: For automatic code formatting.
